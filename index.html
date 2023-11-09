@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TOKO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        tailwind.config = {
+          theme: {
+            container: {
+                center: true,
+                padding: '9rem'
+            },
+            extend: {
+              colors: {
+                'primary' : '#808080'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- header -->
+    <header class="py-4 shadow-sm bg-white">
+        <div class="container flex items-center justify-between">
+            <!-- logo -->
+            <img id="pic" src="aset/icon.png" class="w-32" alt="">
+
+            <!-- searc -->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-1-md focus:outline-none" placeholder="search">
+                <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
+            </div>
+
+            <!-- icon -->
+            <div class="flex items-center space-x-4">
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                <div class="text-2xl">
+                    <i class="far fa-heart"></i>
+                </div>
+                <div class="text-xs leading-3">Wish Lish</div>
+                
+            </a>
+            <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                <div class="text-2xl">
+                    <i class="far fa-cart-shopping"></i>
+                </div>
+                <div class="text-xs leading-3">Shop</div>
+                
+            </a>
+            <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                <div class="text-2xl">
+                    <i class="far fa-user"></i>
+                </div>
+                <div class="text-xs leading-3">Contact</div>
+                
+            </a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- banner -->
+    <div class="bg-cover bg-no-repeat bg-center py-36" style="background-image: url(aset/bg.jpg);" >
+        <div class="container">
+            <div id="text"><h1 class="text-6xl text-gray-800 font-medium mb-4 capitalize">
+                Lorem, ipsum dolor. <br>Lorem, ipsum.
+            </h1>
+            <p >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui. <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </p></div>
+            <div class="mt-12">
+                <button name="button" id="1" onclick="changeText()" class="bg-primary border border-primary text-white px-8 py-3 font-medium rounded-md hover:bg-transparent hover:text-primary transition">CLICK ME PLS</button>
+                <button name="button" id="1" onclick="myfun()" class="bg-primary border border-primary text-white px-8 py-3 font-medium rounded-md hover:bg-transparent hover:text-primary transition">INI BUAT GAMBAR</button>
+            </div>
+        </div>
+    </div>
+    <!-- end banner -->
+    <!-- js -->
+    <script src="java.js"></script>
+</body>
+</html>
